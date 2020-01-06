@@ -1,8 +1,8 @@
 <template>
   <v-card class="col-md-6 col-sm-12 col-lg-4 text-center " id="contact-form">
     <v-form action="#" method="POST">
-      <v-text-field type="text" label="Full Name" />
-      <v-text-field type="email" label="Email" />
+      <v-text-field type="text" :label="label_one" />
+      <v-text-field type="email" :label="label_two" />
       <v-textarea name="Subject" label="Subject"></v-textarea>
       <v-btn class="success">submit</v-btn>
       <v-btn>clear</v-btn>
@@ -13,7 +13,10 @@
 <script>
 export default {
   name: "Contact",
-  props: []
+  props: ["label_one", "label_two"],
+  data() {
+    return {};
+  }
 };
 </script>
 <style scoped>

@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <section>
-      <Contact />
+      <Contact :label_one="label_one" :label_two="label_two" />
       <Map />
     </section>
   </v-container>
@@ -14,6 +14,13 @@ import Map from "@/components/Map.vue";
 
 export default {
   name: "home",
+  data() {
+    return {
+      label_one: "First Name",
+      label_two: "Email",
+      label_three: "Subject"
+    };
+  },
   components: {
     Contact,
     Map
