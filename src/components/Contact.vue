@@ -7,6 +7,7 @@
       <v-btn class="success">submit</v-btn>
       <v-btn>clear</v-btn>
     </v-form>
+    this text is edited
   </v-card>
 </template>
 
